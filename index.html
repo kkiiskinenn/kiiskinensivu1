@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiiskinen Kalle, Aikani armeijassa</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="index-page">
+   
+
+  <header>
+
+      
+    <div class="container header-flex">
+    
+      
+      <button class="hamburger" id="hamburger">☰</button>
+      
+      <nav id="navMenu" class="nav-menu">
+        <a href="index.html">Esipuhe</a>
+        <a href="kokemus.html">Kokemus</a>
+        <a href="Loppupuhe.html">Loppupuhe</a>
+      
+      </nav>
+    </div>
+    <div class="container">
+      <h1>Aikani armeijassa</h1>
+    </div>
+  </header>
+ <!--sivusto suunnitellaan mobiilille joka on kooltaan 390px leveä ja 663px korkea-->
+  <main>
+    
+    <section id="esittely" class="section">
+      <div class="container esittely-grid">
+
+        <img src="inttiryhmäkuva.jpg" alt="inttiryhmäkuva">
+
+        
+        <div>
+          <h2>Esipuhe</h2>
+          <p>
+            Kun mietin aihetta sivuston tekemiseen mieleeni ei tullut melkein mitään muuta
+            kuin armeija. Armeija on ollut iso osa elämääni ja se on muokannut minua ihmisenä.
+
+            Tällä sivustolla esittelen hieman kokemustani armeijasta.
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Kiitos vierailustasi!  </p>
+    </div>
+  </footer>
+<script>
+
+  
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+
+
+</body>
+</html>

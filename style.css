@@ -1,0 +1,120 @@
+:root {
+  --bg: #0b1d0b;
+  --bg-light: #1e3320;
+  --text: #e6e9e5;
+  --accent: #4d704d;
+  --accent-light: #6b8f6b;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  font-size: 15px; 
+}
+
+.container {
+  width: 92%;
+  max-width: 390px; 
+  margin: 0 auto;
+}
+
+header {
+  background: var(--accent);
+  color: white;
+  padding: 0.75rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.section {
+  padding: 1rem;
+  margin-top: 0.75rem;
+  background: var(--bg-light);
+  border-radius: 10px;
+}
+
+.esittely-grid {
+  display: flex;
+  flex-direction: column; 
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.esittely-grid img {
+  max-width: 160px;
+  border-radius: 10px;
+  border: 3px solid var(--accent-light);
+}
+
+.esittely-grid div {
+  width: 100%;
+}
+
+
+.skills-list {
+  list-style: square inside;
+  margin-top: 0.75rem;
+  padding-left: 0; 
+}
+
+
+footer {
+  background: var(--accent);
+  text-align: center;
+  padding: 0.75rem 0;
+  margin-top: 1rem;
+  color: white;
+  font-size: 13px;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background: #1e3320;  
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-menu a:last-child {
+  border-bottom: none;
+}
+
+.nav-menu a:hover {
+  background: #4d704d;
+}
+
+
+.nav-menu.active {
+  display: flex;
+}
+
+ul  {
+  padding-left: 0;
+}
+ul li {
+   list-style-position: inside;
+} 
+
+#index-page .esittely-grid img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
